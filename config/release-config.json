@@ -1,0 +1,12 @@
+{
+  "application": "application-one",
+  "release": {
+    "version": "1.0.0",
+    "environment": "dev",
+    "databaseChange": false
+  },
+  "deploymentRules": {
+    "createReleaseBranch": true,
+    "createPullRequest": true
+  }
+}

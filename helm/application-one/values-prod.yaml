@@ -1,0 +1,18 @@
+replicaCount: 3
+
+image:
+  tag: "1.0.0"
+
+environment:
+  SPRING_PROFILES_ACTIVE: prod
+
+features:
+  notification: true
+  fraudCheck: true
+  databaseChange: true
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 8
+  targetCPUUtilizationPercentage: 70
