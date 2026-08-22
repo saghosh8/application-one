@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  tag: "1.0.0"
+
+environment:
+  SPRING_PROFILES_ACTIVE: uat
+
+features:
+  notification: true
+  fraudCheck: false
+  databaseChange: false

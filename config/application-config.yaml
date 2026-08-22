@@ -1,0 +1,13 @@
+application:
+  name: application-one
+  version: 1.0.0
+  enabled: true
+
+deployment:
+  environment: dev
+  replicas: 1
+
+features:
+  databaseChange: false
+  notification: false
+  fraudCheck: false

@@ -1,0 +1,19 @@
+{
+  "services": [
+    {
+      "name": "application-one",
+      "enabled": true,
+      "version": "1.0.0"
+    },
+    {
+      "name": "notification-service",
+      "enabled": false,
+      "version": "1.0.0"
+    },
+    {
+      "name": "fraud-service",
+      "enabled": false,
+      "version": "1.0.0"
+    }
+  ]
+}
