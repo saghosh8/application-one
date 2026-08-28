@@ -17,6 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Show inputs
+        run: |
+          echo "branch: ${{ github.ref_name }}"
+          echo '${{ toJSON(github.event.inputs) }}' | jq -r 'to_entries[] | "\(.key): \(.value)"'
+
       - name: Resolve release tag and commit SHA
         id: resolve
         run: |
